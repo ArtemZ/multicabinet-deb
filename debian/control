@@ -1,9 +1,0 @@
-Package: multicabinet2
-#Source: multicabinet2
-Version: 0.1
-Section: web
-Priority: optional
-Architecture: all
-Depends: ${shlibs:Depends}, java-runtime-headless (>= 1.6)
-Maintainer: Artem Zhirkov
-Description: A billing and invoicing web application
