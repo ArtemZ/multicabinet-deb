@@ -1,0 +1,13 @@
+Source: multicabinet2
+Section: web
+Priority: optional
+Maintainer: Artem Zhirkov <az@develdynamic.com>
+Build-Depends: debhelper (>=5)
+Standards-Version: 0.2
+XS-Vcs-Browser: https://bitbucket.org/ArtemZ/multicabinet
+XS-Vcs-Git: git@bitbucket.org:ArtemZ/multicabinet.git
+
+Package: multicabinet2
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, default-jre-headless (>= 1.6), adduser
+Description: A billing and invoicing web application

@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+  install)
+	if ! id -u multicabinet >/dev/null 2>&1; then
+		adduser --no-create-home --disabled-login multicabinet
+	fi
+    ;;
+
+  upgrade)
+    ;;
+
+  abort-upgrade)
+    ;;
+
+  *)
+    echo "preinst called with unknown argument \`$1'" >&2
+    exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
